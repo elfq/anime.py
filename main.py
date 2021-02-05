@@ -34,4 +34,3 @@ async def on_ready():
 bot.run(environ.get("DISCORD_TOKEN"))
 
 # Step on the Scarlet Soil, Kamoking - Calm BGM
-
