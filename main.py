@@ -19,6 +19,11 @@ for file in os.listdir("cogs"):
         bot.load_extension(f"cogs.{name}")
 
 
+@bot.command(aliases=["src"])
+async def source(ctx):
+    await ctx.send("This bot was made with https://github.com/elfq/anime.py, and https://shiro.gg!")
+# You're not allowed to remove this command by LICENSE, please review https://github.com/elfq/anime.py/blob/main/LICENSE for more information!
+        
 @bot.event 
 async def on_ready():
   print("-----------")
