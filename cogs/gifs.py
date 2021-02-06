@@ -23,7 +23,7 @@ class AnimeGifs(commands.Cog):
     help="Hug a user! (or yourself :D)",
     usage="@elf#1000"
   )
-  async def hug_(self, ctx, user : discord.Member):
+  async def hug_(self, ctx: commands.Context, user : discord.Member):
     async with aiohttp.ClientSession() as cs:
       async with cs.get('https://shiro.gg/api/images/hug') as r:
         res = await r.json()
@@ -47,7 +47,7 @@ class AnimeGifs(commands.Cog):
     help="Kiss a user! (or yourself (somehow))",
     usage="@elf#1000"
   )
-  async def kiss_(self, ctx, user : discord.Member):
+  async def kiss_(self, ctx: commands.Context, user : discord.Member):
     async with aiohttp.ClientSession() as cs:
       async with cs.get('https://shiro.gg/api/images/kiss') as r:
         res = await r.json()
@@ -71,7 +71,7 @@ class AnimeGifs(commands.Cog):
     help="Give a pat to yourself or others!",
     usage="@elf#1000"
   )
-  async def pat_(self, ctx, user : discord.Member):
+  async def pat_(self, ctx: commands.Context, user : discord.Member):
     async with aiohttp.ClientSession() as cs:
       async with cs.get('https://shiro.gg/api/images/pat') as r:
         res = await r.json()
