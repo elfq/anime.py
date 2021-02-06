@@ -12,7 +12,7 @@ class AnimeProfiles(commands.Cog):
     name="avatar",
     help="Generate an anime avatar.",
   )
-  async def avatar_(self, ctx):
+  async def avatar_(self, ctx: commands.Context):
     async with aiohttp.ClientSession() as cs:
       async with cs.get('https://shiro.gg/api/images/avatars') as r:
         res = await r.json()
@@ -27,7 +27,7 @@ class AnimeProfiles(commands.Cog):
     name="wallpaper",
     help="Generate an anime wallpaper.",
   )
-  async def wallpaper_(self, ctx):
+  async def wallpaper_(self, ctx: commands.Context):
     async with aiohttp.ClientSession() as cs:
       async with cs.get('https://shiro.gg/api/images/wallpapers') as r:
         res = await r.json()
