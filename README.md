@@ -1,6 +1,4 @@
-# anime.py
-A discord.py anime bot.
-
+![Image](https://images-ext-1.discordapp.net/external/pM_UcoVUx6aNaxlUVVDcgrkPbZi6mZABefd3orM-83M/https/shiro.gg/images/wallpapers/1802525285.png?width=886&height=498)
 
 ### Self-hosting.
 
