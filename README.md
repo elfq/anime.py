@@ -8,12 +8,14 @@ Install the repository, then unzip it.
 
 Then rename `.env.example` to `.env` and open it with a text editor, and change the values.
 
-Example:
+*you may need to check if you can view hidden files on windows to access this file!!!*
+
 ```
-DISCORD_TOKEN=YOUR-TOKEN-HERE
-DISCORD_PREFIX=b!
-DEVELOPERS=388811685156093953
+DISCORD_TOKEN= 
+DISCORD_PREFIX=      
 ```
+
+Don't include any quotes when setting your values!
 
 **Windows Setup**
 
