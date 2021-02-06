@@ -5,8 +5,7 @@ import os
 from os import environ
 
 bot = Bot(
-    command_prefix=environ.get("DISCORD_PREFIX"), prefix=environ.get("DISCORD_PREFIX"),
-    developer_ids=environ.get("DEVELOPERS"), command_attrs=dict(hidden=True), intents=discord.Intents(
+    command_prefix=environ.get("DISCORD_PREFIX"), prefix=environ.get("DISCORD_PREFIX"), command_attrs=dict(hidden=True), intents=discord.Intents(
         guilds=True, members=True, messages=True, reactions=True, presences=True
     ), allowed_mentions=discord.AllowedMentions(roles=False, users=True, everyone=False)
 )
